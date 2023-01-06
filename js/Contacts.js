@@ -56,3 +56,4 @@ function checkAddressValid(address){
     return true;
 }
 
+let contact=new Contacts();
