@@ -1,6 +1,6 @@
-
 let isUpdate=false;
 let newContact=new Array();
+
 window.addEventListener('DOMContentLoaded',(event)=>{
     const name = document.querySelector('#name');
     const textError = document.querySelector('.text-error');
@@ -46,10 +46,11 @@ window.addEventListener('DOMContentLoaded',(event)=>{
             addressError.textContent = exception;
         }
     });
+    checkForUpdates();
 });
+
 function save(){
-    try{ 
-        contact._id=0;
+    try{ //contact._id=getID();
        
         contact._name=document.getElementById('name').value;
         contact._phone=document.getElementById('phone').value;

@@ -64,5 +64,4 @@ function update(node){
     }
     localStorage.setItem('editContact', JSON.stringify(contact,'\t', 2));
     window.location.replace(site_properties.contact_form);
-    checkForUpdate();
 }
